@@ -1,7 +1,11 @@
 import "./App.css";
+import { useState } from "react";
 import Accordian from "./components/Accordian";
 import Search from "./components/Search";
 import Dropdown from "./components/Dropdown";
+import Translate from "./components/Translate";
+import Route from "./components/Route";
+import Header from "./components/Header";
 function App() {
   const items = [
     {
@@ -17,9 +21,43 @@ function App() {
       content: "You use React by creating components",
     },
   ];
+
+  const options = [
+    {
+      label: "The Color Red",
+      value: "red",
+    },
+    {
+      label: "The Color Green",
+      value: "green",
+    },
+    {
+      label: "A Shade of Blue",
+      value: "blue",
+    },
+  ];
+  const [selected, setSelected] = useState(options[0]);
+
   return (
     <div>
-      <Dropdown />
+      <Header />
+      <Route path="/">
+        <Accordian items={items} />
+      </Route>
+      <Route path="/list">
+        <Search />
+      </Route>
+      <Route path="/dropdown">
+        <Dropdown
+          label="Color"
+          options={options}
+          selected={selected}
+          onSelectedChange={setSelected}
+        />
+      </Route>
+      <Route path="/translate">
+        <Translate />
+      </Route>
     </div>
   );
 }
