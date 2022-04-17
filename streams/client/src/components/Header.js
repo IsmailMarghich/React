@@ -9,7 +9,7 @@ const Header = () => {
         Streams
       </Link>
       <div className="ui secondary pointing menu">
-        <Link to="/new" className="item">
+        <Link to="/streams/new" className="item">
           Create stream
         </Link>
       </div>
