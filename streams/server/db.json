@@ -8,27 +8,15 @@
     },
     {
       "title": "Minecraft",
-      "description": "Wynncraft",
+      "description": "Lets play episode 512",
       "id": 2,
       "userId": "102014342082582981363"
     },
     {
       "title": "League of legends",
-      "description": "LCS Semi-Finals C9 vs EG",
+      "description": "LCS Semi-Finals TL vs EG",
       "id": 3,
       "userId": "102014342082582981363"
-    },
-    {
-      "title": "Gaming",
-      "description": "Epic gaming",
-      "userId": "102014342082582981363",
-      "id": 4
-    },
-    {
-      "title": "Ranked Warzone",
-      "description": "#1 Player",
-      "userId": "102014342082582981363",
-      "id": 5
     }
   ]
 }
